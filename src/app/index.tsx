@@ -5,5 +5,5 @@ export default function HomeScreen() {
 
 
 
-    return <UserView></UserView>
+    return <UserView/>
 }
