@@ -13,6 +13,7 @@ export function NotesView({
   userId: string | null;
   email: string | undefined;
 }) {
+  
   // Estados: notes (arreglo de notas) y noteSelected (nota activa en el modal)
   const [notes, setNotes] = useState<Note[]>([]);
   const [noteSelected, setNoteSelected] = useState<Note | null>(null);
