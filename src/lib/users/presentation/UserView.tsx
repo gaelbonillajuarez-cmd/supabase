@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import { View } from 'react-native'
 
 
-import Account from '../infraestructure/presentation/account'
+import GalleryView from '@/lib/modules/gallery/presentation/GalleryView'
 import Auth from '../infraestructure/presentation/components/Auth'
 
 
@@ -44,7 +44,7 @@ export function UserView() {
   return (
     <View style={{ flex: 1 }}>
       {/* Renderiza la pantalla de galeria en lugar de la de usuario cuando exista un id de usuario activo*/}
-      {userId ? <Account key={userId} userId={userId} email={email}/> : <Auth />}
+      {userId ? <GalleryView/> : <Auth />}
     </View>
   )
 }
